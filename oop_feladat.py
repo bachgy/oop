@@ -1,7 +1,6 @@
 #VZJDIG
 from abc import  ABC
 
-
 class Szalloda:
     def __init__(self, nev):
         self.nev = nev

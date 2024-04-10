@@ -23,11 +23,9 @@ class MainApp(QMainWindow, Ui_MainWindow):
         self.Foglalas_listazo.show()
 
     def slotCreateReserv(self):
-        # print("Foglalás készítése")
         self.Foglalas_keszito = ReservAddApp()
         SzallodaiSzobak = Szoba
         for x in SzallodaiSzobak.szobaszam:
-            # print(x)
             self.Foglalas_keszito.cmbSzobak.addItem(str(x))
         self.Foglalas_keszito.show()
 
@@ -122,7 +120,6 @@ class Foglalas:
         Foglalas.szobak.append(self.szobak)
 
     def __str__(self):
-        #return f"Foglalás: {self.vendeg_nev} - {self.szoba.leiras()}, Dátum: {self.datum}"
         return f"Név: {self.vendeg_nev}, Szobaszám: {self.szobaszam}, Dátum: {self.datum}"
     @classmethod
     def hozzaad(cls, szoba, vendeg_nev, mely_napra):

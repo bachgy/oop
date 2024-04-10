@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdde5a13-e209-4377-8fc5-3a559d8343d3" name="Changes" comment="Elkészült">
+    <list default="true" id="fdde5a13-e209-4377-8fc5-3a559d8343d3" name="Changes" comment="Hibajavítás, sorszámkezelési hiba javítva">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop_feladat.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop_feladat.py" afterDir="false" />
     </list>
@@ -35,7 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Design.executor": "Run",
-    "Python.oop_feladat.executor": "Debug",
+    "Python.oop_feladat.executor": "Run",
     "Python.teszt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -167,14 +167,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712753439282</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Hibajavítás, sorszámkezelési hiba javítva">
+      <option name="closed" value="true" />
+      <created>1712755716035</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712755716035</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Teszt" />
     <MESSAGE value="Teszt megint" />
     <MESSAGE value="Elkészült" />
-    <option name="LAST_COMMIT_MESSAGE" value="Elkészült" />
+    <MESSAGE value="Hibajavítás, sorszámkezelési hiba javítva" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibajavítás, sorszámkezelési hiba javítva" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

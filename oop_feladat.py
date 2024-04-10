@@ -17,8 +17,9 @@ class MainApp(QMainWindow, Ui_MainWindow):
     def slotViewReservs(self):
         self.Foglalas_listazo = ReservListApp()
         FoglalasClass = Foglalas
-        for x in FoglalasClass.peldanyok:
-          self.Foglalas_listazo.listWidget.addItem(str(x))
+        for i,x in enumerate(FoglalasClass.peldanyok):
+          self.Foglalas_listazo.listWidget.addItem("Sorszám:" + str(i) + " " + str(x))
+
         self.Foglalas_listazo.show()
 
     def slotCreateReserv(self):
@@ -34,8 +35,8 @@ class MainApp(QMainWindow, Ui_MainWindow):
     def slotDeleteReserv(self):
         self.Foglalas_torlo = reservCancelApp()
         FoglalasClass = Foglalas
-        for x in FoglalasClass.peldanyok:
-            self.Foglalas_torlo.listWidget.addItem(str(x))
+        for i,x in enumerate(FoglalasClass.peldanyok):
+            self.Foglalas_torlo.listWidget.addItem("Sorszám: " + str(i) + " " + str(x))
         self.Foglalas_torlo.show()
 
 class ReservAddApp(QMainWindow, Ui_addReserv):
@@ -119,10 +120,10 @@ class Foglalas:
         Foglalas.peldanyok.append(self)
         Foglalas.datumok.append(mely_napra)
         Foglalas.szobak.append(self.szobak)
-        self.index = Foglalas.peldanyok.index(self)
+
     def __str__(self):
         #return f"Foglalás: {self.vendeg_nev} - {self.szoba.leiras()}, Dátum: {self.datum}"
-        return f"Sorszám: {self.index} Név: {self.vendeg_nev}, Szobaszám: {self.szobaszam}, Dátum: {self.datum}"
+        return f"Név: {self.vendeg_nev}, Szobaszám: {self.szobaszam}, Dátum: {self.datum}"
     @classmethod
     def hozzaad(cls, szoba, vendeg_nev, mely_napra):
         return cls(szoba, vendeg_nev, mely_napra)
